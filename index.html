@@ -14,7 +14,7 @@
 <body>
     <script>
         var __EVAL = (s) => eval(`void (__EVAL = ${__EVAL}); ${s}`);
-        $('js-term').terminal(function(command) {
+        $('body').terminal(function(command) {
             if (command !== '') {
                 try {
                     var result = __EVAL(command);
@@ -31,7 +31,6 @@
             greetings: 'js-term (term v. ' + $.terminal.version + ')',
             prompt: 'js> '
         });
-    </script>    
-    <js-term></js-term>
+    </script>
 </body>
 </html>
